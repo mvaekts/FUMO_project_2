@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="633.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <TableView fx:id="ValuesTable" layoutX="26.0" layoutY="25.0" prefHeight="361.0" prefWidth="202.0" AnchorPane.leftAnchor="26.0" AnchorPane.topAnchor="25.0">
+        <columns>
+          <TableColumn fx:id="ColumnK" prefWidth="100.0" text="Ki" />
+          <TableColumn fx:id="ColumnY" prefWidth="100.0" text="Yi" />
+        </columns>
+      </TableView>
+      <ImageView fitHeight="126.0" fitWidth="316.0" layoutX="279.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+          <Image url="@../Images/formula.png" />
+      </ImageView>
+      <Button layoutX="237.0" layoutY="297.0" mnemonicParsing="false" onMouseClicked="#FillRandomClick" prefWidth="200.0" text="Заполнить случайными числами" />
+      <Button layoutX="237.0" layoutY="333.0" mnemonicParsing="false" onMouseClicked="#CalculateClick" prefWidth="200.0" text="Вычислить" />
+      <TextField fx:id="FieldA" layoutX="354.0" layoutY="182.0" prefHeight="25.0" prefWidth="170.0" />
+      <TextField fx:id="FieldB" layoutX="354.0" layoutY="223.0" prefHeight="25.0" prefWidth="170.0" />
+      <Label layoutX="317.0" layoutY="186.0" text="a =" />
+      <Label layoutX="317.0" layoutY="227.0" text="b =" />
+      <Button layoutX="528.0" layoutY="297.0" mnemonicParsing="false" onMouseClicked="#ClearClick" prefWidth="80.0" text="Очистка" />
+      <Button layoutX="528.0" layoutY="333.0" mnemonicParsing="false" onMouseClicked="#ExitClick" prefWidth="80.0" text="Выход" />
+   </children>
+</AnchorPane>
